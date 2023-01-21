@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`min-h-screen ${fontSans.variable}`}>
       <head />
-      <body >{children}</body>
+      <body className='min-h-screen'>{children}</body>
     </html>
   )
 }
