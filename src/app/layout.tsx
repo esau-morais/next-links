@@ -7,11 +7,11 @@ const fontSans = FontSans({
   variable: '--font-space-grotesk'
 })
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
   children: React.ReactNode
-}) {
+}) => {
   return (
     <html lang="en" className={`min-h-screen ${fontSans.variable}`}>
       <head />
@@ -19,3 +19,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+export default RootLayout
