@@ -45,7 +45,7 @@ const LinkCard = ({
 }
 
 
-const HomePage = () => {
+const HomePage = async () => {
   const data = await get('data') as Data | undefined
 
   if (!data) redirect('https://linktr.ee/selenagomez')
