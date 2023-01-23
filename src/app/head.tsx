@@ -1,4 +1,4 @@
-export const Head = () => {
+const Head = () => {
   return (
     <>
       <link rel="icon" href="/favicon.ico" />
@@ -21,3 +21,5 @@ export const Head = () => {
     </>
   )
 }
+
+export default Head
