@@ -7,7 +7,8 @@
     "next/core-web-vitals",
     "next",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -17,9 +18,12 @@
   "plugins": [
     "@typescript-eslint",
     "prefer-arrow",
-    "eslint-plugin-import-helpers"
+    "eslint-plugin-import-helpers",
+    "prettier"
   ],
   "rules": {
+    "prettier/prettier": "warn",
+    "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "prefer-arrow/prefer-arrow-functions": [
       "error",
@@ -42,21 +46,6 @@
         "allowArrowFunctions": true
       }
     ],
-    "quotes": [
-      2,
-      "single",
-      {
-        "avoidEscape": true
-      }
-    ],
-    "semi": [
-      "error",
-      "never"
-    ],
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
     "import-helpers/order-imports": [
       "warn",
       {
@@ -64,7 +53,6 @@
         "groups": [
           "/^react/",
           "/^next|@next/",
-          "/^@testing|vitest/",
           "module",
           "/^components/",
           "/^hooks/",
